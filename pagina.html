@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial">
+        <title>document</title>
+        <style>
+            .tela{
+                height: 300px;
+                width: 350px;
+                border: 3px solid black;
+                margin: 50px auto 0px auto;
+            }
+            .tela .linha1{
+                margin-left: 30px;
+                margin-top: 30px;
+            }
+            .tela .linha1 label{
+                display: block;
+            }
+            button {
+                margin-top: 40px;
+                margin-left: 30px;
+            }
+            .tela .linha2{
+                margin-left: 30px;
+                margin-top: 30px;
+            }
+            .tela .linha2 label {
+                display: block;
+            }
+            button{
+                margin-top: 40px;
+                margin-left: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="tela">
+            <div class="linha1">
+            <label>Numero</label>
+            <input id="num1" type="text" size="10" placeholder="digite alguma coisa">
+            </div>
+            <button id="btn1"> verificar </button>
+        
+        
+            <div class="linha2">
+                <label>Numero 2</label>
+                <input id="num2" type="text" size="10" placeholder="digite algo">
+            </div>
+            <button id="btn2"> verificar </button>
+
+        </div>
+        
+    </body>
+    <SCript>
+        const btn1 = document.getElementById('btn1')
+        const num1 =document.getElementById('num1')
+        btn1.addEventListener('click',function(){
+            const meunum = num1.value
+            if (meunum == 1){
+                alert("numero 1")
+            }else if(meunum == 2) {
+                alert("numero 2")
+            }else{
+                 alert("nao valido")
+            }
+            num1.value = ""
+            num1.focus()
+
+        }
+        
+        )
+        const btn2 = document.getElementById('btn2')
+        const num2 = document.getElementById('num2')
+        btn2.addEventListener('click',function(){
+            const meunum = num2.value
+            if (meunum == 3){
+                alert("numero 3")
+            }else if(meunum == 4){
+                alert("numero 4")
+            }else{
+                alert("nao valido")
+            }
+            num2.value = ""
+            num2.focus()
+        }
+    )
+    </SCript>
+</html>
